@@ -29,3 +29,23 @@
 
 <p>&nbsp;</p>
 <strong>Follow Up:</strong> Can you do it in <code>O(n)</code> time and/or <strong>in-place</strong> with <code>O(1)</code> extra space?
+
+
+
+
+
+
+
+
+
+
+
+
+
+notes: 
+in tthis problem i sort array first ....
+then set i at middle of array and j at last
+then then when arr[k] in k is evaen then = arr[i];
+and when k is odd then from last element put in arr =arr[j]
+i--;
+j--;
