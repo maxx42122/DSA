@@ -20,3 +20,17 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you minimize the total number of operations done?
+
+
+
+
+<p>&nbsp;</p>
+I (i) start at the beginning of the array and move through each element one by one.
+
+At each step, I check if the current number is zero or not.
+
+If it's not zero, I help copy that value to the front of the array at position j.
+
+If it's zero, I signal to k to count it so it can be added at the end later.
+
+My job is done after scanning the entire array and identifying all zero and non-zero positions.
