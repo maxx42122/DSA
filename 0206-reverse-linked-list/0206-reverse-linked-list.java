@@ -25,7 +25,7 @@ class Solution {
     
         reverseList(slow);
          fast=head;
-         while (slow!=null && head ==null) {
+         while (slow!=null && head !=null) {
 
             if(slow.val !=fast.val){
                 return false;
