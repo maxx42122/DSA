@@ -19,9 +19,9 @@ class Solution {
             slow=slow.next;
         }
 
-        if(fast!=null){
-            slow=slow.next;
-        }
+        // if(fast!=null){
+        //     slow=slow.next;
+        // }
     
         reverseList(slow);
          fast=head;
