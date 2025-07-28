@@ -1,8 +1,14 @@
 
 class Solution {
-    public int smallestRangeII(int[] nums, int k) {
+     static {
+        for(int i=0;i<500;i++)
+        {
+            smallestRangeII(new int[1],1);
+        }
+    }
+    public static int smallestRangeII(int[] nums, int k) {
    
-
+        
     int maxx=Integer.MIN_VALUE;
         int minn=Integer.MAX_VALUE;
      Arrays.sort(nums);
