@@ -12,9 +12,9 @@ class Solution {
             int j=i+1;
             maxx=Math.max(nums[nums.length-1]-k,nums[i]+k);
            minn=Math.min(nums[0]+k,nums[j]-k);
-             r=Math.min(r,(maxx-minn));
         }
-      
+                   r=Math.min(r,(maxx-minn));
+
           
       
         return r; 
