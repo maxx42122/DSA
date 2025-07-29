@@ -19,11 +19,6 @@ class Solution {
             cnt++;
             temp1=temp1.next;
         }
-
-       
-
-
-
         int x=cnt-n;
           
           ListNode temp=head;
@@ -41,9 +36,6 @@ class Solution {
             }
                temp.next=temp.next.next;
             }  
-         
-         
-
             return head;
         
     }
