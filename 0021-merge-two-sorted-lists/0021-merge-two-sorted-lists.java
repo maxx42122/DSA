@@ -24,7 +24,7 @@ class Solution {
 
         Collections.sort(sum);
 
-        ListNode result=new ListNode();
+        ListNode result=new ListNode(0);
         ListNode temp3=result;
 
         for(int i=0;i<sum.size();i++){
