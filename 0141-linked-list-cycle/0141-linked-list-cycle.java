@@ -16,9 +16,6 @@ public class Solution {
     
 
        
-        if(head==null)return false;
-        if(head.next==null)return false;
-          if(head.next.next==null)return false;
            ListNode ptr=head;
         ListNode ptr1=head;
 
