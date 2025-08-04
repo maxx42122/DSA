@@ -3,8 +3,7 @@ class Solution {
         if(n==1 || n==2 || n==3)return true;
         if(n%4==0)return false;
 
-        if(n%3==0 || n%3==1 ||n%3==2)return true;
-        return false;
+     return true;
         
     }
 }
