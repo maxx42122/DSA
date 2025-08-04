@@ -2,8 +2,8 @@ class Solution {
     public int reverse(int x) {
        long num=0;
         while(x!=0){
-            int dig=x%10;
-            num=num*10+dig;
+          
+            num=num*10+x%10;
             x=x/10;
         }
 
