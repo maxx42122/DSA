@@ -6,7 +6,7 @@ class Solution {
       int y = Math.abs(x);
        
         
-        while(y>0){
+        while(y!=0){
             int dig=y%10;
             num*=10;
             num+=dig;
