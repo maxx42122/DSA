@@ -2,14 +2,9 @@ class Solution {
     public int reverse(int x) {
       
        long num=0;
-      
-    
-       
-        
         while(x!=0){
             int dig=x%10;
-            num*=10;
-            num+=dig;
+            num=num*10+dig;
             x=x/10;
 
         }
