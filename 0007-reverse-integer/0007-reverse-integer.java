@@ -12,9 +12,7 @@ class Solution {
          if( num> Integer.MAX_VALUE || num< Integer.MIN_VALUE){
             return 0;
         }
-         else if(x<0){
-            return(int) -num;
-        }
+       
         return(int) num;
         
     }
