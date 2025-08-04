@@ -3,14 +3,14 @@ class Solution {
       
        long num=0;
       
-      int y = Math.abs(x);
+    
        
         
-        while(y!=0){
-            int dig=y%10;
+        while(x!=0){
+            int dig=x%10;
             num*=10;
             num+=dig;
-            y=y/10;
+            x=x/10;
 
         }
 
