@@ -1,21 +1,26 @@
 class Solution {
     public int reverse(int x) {
       
-       int num=0;
+       long num=0;
       
-    
+      int y = Math.abs(x);
+       
         
-        while(x!=0){
-            int dig=x%10;
-          
-            x=x/10;
-                // Check for overflow before multiplying
-            if (num > Integer.MAX_VALUE / 10 || (num == Integer.MAX_VALUE / 10 && dig > 7)) return 0;
-            if (num < Integer.MIN_VALUE / 10 || (num == Integer.MIN_VALUE / 10 && dig < -8)) return 0;
-              num=num*10+dig;
+        while(y>0){
+            int dig=y%10;
+            num*=10;
+            num+=dig;
+            y=y/10;
 
         }
-        return num;
+
+         if( num> Integer.MAX_VALUE || num< Integer.MIN_VALUE){
+            return 0;
+        }
+         else if(x<0){
+            return(int) -num;
+        }
+        return(int) num;
         
     }
 }
