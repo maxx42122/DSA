@@ -16,7 +16,7 @@ int rem=num%7;
         s.insert(0,rem);
         num/=7;
     }
-    return sign==-1 ?"-"+s.toString():s.toString();
+     return Integer.toString(num,7);
         
     }
 }
