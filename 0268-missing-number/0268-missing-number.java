@@ -1,17 +1,29 @@
 class Solution {
     public int missingNumber(int[] nums) {
-      
-        int n=nums.length;
-        int fact=(n*(n+1))/2;
-        int sum=0;
-        for(int i=0;i<nums.length;i++){
-        sum+=nums[i];            
-        }
+    int sum=0;
+    int max=0;
+    for(int i:nums){
+        sum+=i;
+       
 
-     
-        return fact-sum;
+    }
+
+    return fact(nums.length)-sum;
+
+
       
 
         
     }
+
+
+    int fact(int x){
+        int f=0;
+        for(int i=x;i>0;i--){
+            f+=i;
+            
+        }
+        return f;
+    }
+
 }
