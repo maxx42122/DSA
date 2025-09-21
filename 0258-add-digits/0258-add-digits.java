@@ -2,19 +2,13 @@ class Solution {
   int s=0;
  public int addDigits(int num) {
     if(num==0)return 0;
-
     s+=num%10;
-    
     addDigits(num/10);
      if(s>=10){
         num=s;
         s=0;
         addDigits(num);
-
     }
-
-   
-
     return s;
  }
 }
