@@ -1,20 +1,11 @@
 class Solution {
     public boolean isPowerOfTwo(int n) {
-        if(n<1){
-            return false;
-        }else if(n==1){
-            return true;
-        }else{
-
-        while(n%2==0){
-            n=n/2;
-        }
-        if(n==1){
-            return true;
-        }else{
-            return false;
-        }
-        }  
-    
+          System.out.println(n);
+          if (n == 1) return true;        // base case: 2^0 = 1
+        if (n <= 0 || n % 2 != 0) return false;
+       
+      
+         return isPowerOfTwo( n/2);
+        
     }
 }
