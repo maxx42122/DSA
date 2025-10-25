@@ -1,24 +1,19 @@
 class Solution {
     public List<String> fizzBuzz(int n) {
-    List<String> list = new ArrayList();
 
-        String str1="Fizz";
-        String str2="Buzz";
-       String str3="FizzBuzz";
-
+        List<String> ls=new ArrayList();
         for(int i=1;i<=n;i++){
-
-             if(i%3==0 && i%5==0){
-                list.add(str3);
-            }else  if(i%3==0){
-                list.add(str1);
-            }else if(i%5==0){
-                list.add(str2);
+            if(i%3==0 && i%5==0){
+                ls.add("FizzBuzz");
+            
+            }else if(i%3==0){
+                 ls.add("Fizz");
+            }else  if(i%5==0){
+                ls.add("Buzz");
             }else{
-                list.add( Integer.toString(i));
+                  ls.add(""+i);
             }
         }
-        return list;
-                
-            }
+        return ls;        
+    }
 }
