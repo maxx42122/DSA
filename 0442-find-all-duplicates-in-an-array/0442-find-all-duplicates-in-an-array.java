@@ -3,12 +3,12 @@ class Solution {
         List <Integer>list=new ArrayList();
 
         Arrays.sort(nums);
-        int j=0;
+     //   int j=0;
         for(int i=1;i<nums.length;i++){
-            if(nums[j]>=nums[i]){
+            if(nums[i-1]>=nums[i]){
                 list.add(nums[i]);
             }
-            j++;
+          //  j++;
 
 
 
